@@ -12,17 +12,21 @@
         <h1> Lais</h1>
         <nav></nav> <!--  Seção de navegação do site -->
         <ul> <!-- Lista não ordenada para links do nosso menu  -->
-            <li> <a href="#sobre">Sobre mim</a></li>
+            <li> <a href="#sobre">Sobre mim</a></li> <!--colocando como referencia -->
             <li> <a href="#projeto">Projetos</a></li>
-             <li> <a href="#contato">Contato</a></li>
-            <!-- <li> Sobre mim </li>-->
+            <li> <a href="#contato">Contato</a></li>
+            <li> <a href="https://google.com.br/" target="_blank">Google</a></li> <!--"target" é para n sair da 
+             página original mas sim abrir uma nova aba-->
+
         </ul>
         <nav></nav>
     </header>
 
-    <section id="sobre">
+    <section id="sobre"> <!-- trazendo "sobre" a referencia-->
+
         <h2>Sobre mim</h2>
-        <img src="capa.jpg" alt="">
+        <img src="capa.jpg" alt="Imagem de foto de perfil" title="Imagem de perfil">
+       
         <article>
             <p>
                 Prazer, me chamo Laís, sou estudante da área de TI, atualmete cursando
@@ -41,12 +45,12 @@
     </section>
     <section id="projeto">
         <h2>Projetos</h2>
-            <p> Visite meu GitHub </p>
-            <address><a href="link:github.com/laiscorrea-dev"></a>github.com/laiscorre-dev</address>
+        
+        <address><a href="https://github.com/laiscorrea-dev" target="_blank">Visite meu GitHub laiscorre-dev</a></address>
 
         <article>
             <h3>Portfólio</h3>
-            <p> 
+            <p>
                 Este foi o primeiro desenvolvido, estudando front-end.
             </p>
         </article>
@@ -58,10 +62,30 @@
         <section id="contato">
             <h2> Contato</h2>
             <p> Voce tem um projeto em mente? Envie uma mensagem. </p>
-            <ul><address>
-                <li>E-mail: <a href="mailton:lais.oc2007@aluno.ifsc.edu.br">lais.oc2007@aluno.ifsc.edu.br</a></li>
-                <li>Telefone: <a href="tel:+5549999025942">(49) 9902-5942 </a></li>
-                <li></li></address>
+
+            <form>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome"> <br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email"> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="teletfone"> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name=""> </select>
+                    <option value="orcamento"> Orçamento</option>
+                    <option value ="duvidas"> Dúvidas</select>
+                    <option value="outro"> Outro</option>
+            </form>
+
+            <ul>
+                <address>
+                    <li>E-mail: <a href="mailton:lais.oc2007@aluno.ifsc.edu.br">lais.oc2007@aluno.ifsc.edu.br</a></li>
+                    <li>Telefone: <a href="tel:+5549999025942">(49) 9902-5942 </a></li>
+                    <li></li>
+                </address>
             </ul>
         </section>
     </footer>
