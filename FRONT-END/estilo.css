@@ -1,0 +1,11 @@
+h1,h2,h3{
+    color: rgb(101, 59, 142);
+    background-color: rgb(186, 161, 209);
+    
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: rgb(78, 173, 104);
+}
