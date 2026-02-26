@@ -26,7 +26,7 @@
 
         <h2>Sobre mim</h2>
         <img src="capa.jpg" alt="Imagem de foto de perfil" title="Imagem de perfil">
-       
+
         <article>
             <p>
                 Prazer, me chamo Laís, sou estudante da área de TI, atualmete cursando
@@ -45,8 +45,9 @@
     </section>
     <section id="projeto">
         <h2>Projetos</h2>
-        
-        <address><a href="https://github.com/laiscorrea-dev" target="_blank">Visite meu GitHub laiscorre-dev</a></address>
+
+        <address><a href="https://github.com/laiscorrea-dev" target="_blank">Visite meu GitHub laiscorre-dev</a>
+        </address>
 
         <article>
             <h3>Portfólio</h3>
@@ -56,6 +57,36 @@
         </article>
     </section>
 
+    <section id="Habilidades">
+        <h2> Habilidades e tecnologias </h2>
+        <table><!-- criamos a tabela -->
+            <thead> <!-- cabeçalho da tabela(primeira linha)-->
+                <tr> <!--1 linha-->
+                    <th>Tecnologias</th> <!-- Colunas  -->
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td> HTML</td>
+                        <td> Iniciante</td>
+                        <td> Capaz de construir estruturas de página web semânticas e responsivas</td>
+                    </tr>
+                    <tr>
+                        <td> CSS </td>
+                        <td> Intermediária</td>
+                        <td> Experiências com flexbox, grid e animaçeões CSS</td>
+                    </tr>
+                    <tr>
+                        <td> JavaScript </td>
+                        <td> Iniciante</td>
+                        <td> Capaz de desenvolver projetos básicos com loógica JavaScript</td>
+                    </tr>
+    
+            </tbody>
+        </table>
+    </section>
     <footer>
         <p>Direito reservado a Laís</p>
 
@@ -63,30 +94,36 @@
             <h2> Contato</h2>
             <p> Voce tem um projeto em mente? Envie uma mensagem. </p>
 
-            <form>
+            <form> <!-- Início de um formulário-->
                 <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome"> <br>
+                <input type="text" id="nome" name="nome" required> <br>
+                <!--'required' referece a um campo obrigatório de preenchimento-->
 
                 <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email"> <br>
+                <input type="email" id="email" name="email" required> <br>
 
                 <label for="telefone">Telefone: </label>
                 <input type="tel" id="telefone" name="teletfone"> <br>
 
                 <label for="assunto">Assunto: </label>
-                <select name=""> </select>
+                <select name="assunto" id="assunto">
                     <option value="orcamento"> Orçamento</option>
-                    <option value ="duvidas"> Dúvidas</select>
+                    <option value="duvidas"> Dúvidas</option>
                     <option value="outro"> Outro</option>
+                </select>
+                <br>
+
+                <label for="mensagem"> Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="22" rows="4" required></textarea>
+                <!--tamanho da coluna e linha-->
+                <br>
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minhas newsletter? Fique por dentro. </label>
+                <br>
+                <input type="submit" value="Enviar mensagem">
             </form>
 
-            <ul>
-                <address>
-                    <li>E-mail: <a href="mailton:lais.oc2007@aluno.ifsc.edu.br">lais.oc2007@aluno.ifsc.edu.br</a></li>
-                    <li>Telefone: <a href="tel:+5549999025942">(49) 9902-5942 </a></li>
-                    <li></li>
-                </address>
-            </ul>
+
         </section>
     </footer>
 
