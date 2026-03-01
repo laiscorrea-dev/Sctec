@@ -33,6 +33,9 @@ section, thead{
     text-align: center;
     
 }
-footer{
+#fo{
+    background-color: black;
+    padding: 10px;
+    color: rgb(255, 255, 255);
     
 }
