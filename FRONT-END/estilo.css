@@ -6,19 +6,29 @@
 
 }
 a{
-    color: rgb(1, 2, 2);
+    text-decoration: none;
+    color: black;
+    
+}
+
+    
+a:hover{
+    color: rgb(17, 30, 213);
+    
 }
 
 nav{
     background-color: rgb(0, 0, 0);
-    padding: 10px;
+    padding: 30px;
     
 }
  nav a {
             color: rgb(252, 252, 252);
-            margin: 0 15px;
+            padding: 0 1px;
+            margin: 0 10px;
             text-decoration: none;
-            font-weight: bold;}
+            font-weight: bold;
+            float:right;}
 
 header{
     background-color: rgb(185, 183, 180);
