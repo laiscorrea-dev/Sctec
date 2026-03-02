@@ -9,10 +9,69 @@
     <header>
         <h1>Página JavaScript </h1>
         <script>
-            let num1 = 2;
-            let num2 = 6;
-            soma = num1 + num2 ;
-            console.log(soma);
+            // Aula 1 
+let num1 = 10;
+let num2 = 2;
+soma = num1 +num2;
+divisao = num1/num2;
+mult= num1*num2;
+console.log(`A soma é ${soma}`);
+console.log(`A divisão é ${divisao}`) 
+console.log(`A multiplcação é ${mult}`) 
+
+//Aula 2 
+let distancia = 0 
+passos = 0 
+while (distancia<=20){
+    let distancialeatoria= Math.floor(Math.random()* 3)+1;
+    console.log(`\nA distancia percorrida até agora foi de: ${distancia}`)
+    distancia += distancialeatoria;
+    passos ++;
+    console.log(`Passos percorridos:  ${passos}`)
+    
+}
+
+//funções aula 2 hoisting - ler a função e guardar na memória 
+let nome = "Lais"
+function escrever(){
+    console.log(`\nOlá ${nome} !`)
+}
+escrever()
+
+// função anonima, não tem hoisting
+let escreverOla2= function(nome){
+    console.log(`Olá ${nome} `)
+    
+}
+escreverOla2("Lai");
+
+function somar( a, b ){
+    return a + b ;
+}
+let resultado = somar(11, 7)
+console.log(resultado)
+
+
+//validar voto 
+
+let result = "";
+function validarVoto(idade){
+    if(idade<16){
+     return "Pessoa não votante"
+    }
+    else if(idade<18){
+        return "Voto opcional"
+    }
+    else {
+        return "Voto obrigatório"
+    }
+    
+}
+result = validarVoto(10)
+console.log(result)
+
+
+
 
         </script>
 

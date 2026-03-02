@@ -33,7 +33,7 @@ nav{
 header{
     background-color: rgb(185, 183, 180);
     padding: 11px;
-    color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
     
 }
 section, thead{
@@ -41,6 +41,7 @@ section, thead{
     padding: 20px;
     margin: 20px;
     text-align: center;
+    
     
 }
 #fo{
