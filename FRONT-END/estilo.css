@@ -1,8 +1,10 @@
 
 
-*{
+body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 0em;
+    padding: 0em;
 
 }
 a{
@@ -19,34 +21,44 @@ a:hover{
 
 nav{
     background-color: rgb(0, 0, 0);
-    padding: 30px;
+    padding: 2em;
+    border-radius: 1em;
     
 }
  nav a {
             color: rgb(252, 252, 252);
-            padding: 0 1px;
-            margin: 0 10px;
+            padding: 0 0em;
+            margin: 0 0.5em;
             text-decoration: none;
             font-weight: bold;
-            float:right;}
+            float:right;
+        }
 
 header{
     background-color: rgb(185, 183, 180);
-    padding: 11px;
+    padding: 0em;
     color: rgb(2, 2, 2);
+    border-radius: 1em;
+    border: 0.1em solid rgb(20, 201, 102);
+    
     
 }
 section, thead{
     background-color:rgb(185, 183, 180);
-    padding: 20px;
-    margin: 20px;
+    padding: 0em;
+    margin: 1em 0em 0em 0em;
     text-align: center;
+    border-radius: 1em;
+    border: 0.1em solid rgb(20, 201, 102);
     
     
 }
 #fo{
     background-color: black;
-    padding: 10px;
+    margin: 1em 0em; 
+    padding: 0.3em;
+
     color: rgb(255, 255, 255);
+    border-radius: 1em;
     
 }
