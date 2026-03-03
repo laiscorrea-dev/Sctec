@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+.flex{
+    display: flex;
+    background-color: azure;
+}
+header{
+    margin-top: 6px ;
+    border: solid;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    border: solid;
+    margin-top: 6px ;
+    clear: both;
+}
+nav{
+    text-align: center;
+    border: solid;
+    margin-top: 6px ;
+    margin-bottom: 6px ;
+}
+div{
+
+    border: 1.9px solid;
+  
+}

@@ -70,12 +70,69 @@ function validarVoto(idade){
 result = validarVoto(10)
 console.log(result)
 
+      </script>
+<!--Aula 4 Engenharia de Softare (Manipulação DE DOM)-->
+      <style> 
+    .card{
+        width: 200px;
+        padding: 1em;
+    }
 
+    .verde{
+        background-color: green;
+        
+        }
+    .amarelo{
+        background-color: yellow;
+       
+    }
+    .vermelho{
+        background-color: red;
+      
+    }
+      </style>
 
+      <h1 id="titulo"> Aula 04 </h1>
+      <p id="tagP"> Essa é a nosssa aula de DOM</p>
+      
+      <div id="card1" class="card"> Card 1</div>
+      <div id="card2" class="card"> Card 2 </div>
+      <div id="card3" class="card"> Card 3 </div>
+      </div>
+      <script>
+        let card1 = document.getElementById("card1"); // pegando o elemento pelo id 'card1'
+        card1.classList.add("verde"); // e adcionando uma class para ele 
+            
+        
+        let card2 = document.getElementById("card2")
+        card2.classList.add("amarelo");
 
-        </script>
+        let card3 = document.getElementById("card3");
+        card3.classList.add("vermelho");
 
-    </header>
+        let titulo = document.getElementById("titulo"); // encontrando a tag pelo 'id'
+        //innerText vai alterar o texto interno
+        titulo.innerText= "Aula 04 - Trilha Dev"; // atribuindo novo valor 
+        titulo.style.color = "green" // alterando o estilo do titulo
+        let tagP = document.getElementById("tagP")
+        tagP.innerText = "DOM JavaScrip em ação"
+        //innerHTML vai alterar todo o HTML interno
+        tagP.innerHTML = "<button>CLICAR AÇÃO</button>" // mudando o tipo da tag de <p> para <button>
+
+        let inputNome = document.getElementById("inputNome"); //tag input é dinamica (precisa do valor do usuário)
+
+        function cliqueNoBotao(){
+            console.log(inputNome.value)
+
+        }
+      </script>
+
+        <br>
+        <input type="text" id="inputNome" placeholder="Digite seu nome "> <!--placeholder é para escrever 
+        denetro da caixa de input-->
+        <button onclick="cliqueNoBotao">Clique aqui</button>
+
+      </header>
     
 </body>
 </html>
