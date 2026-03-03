@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #card {
+        width: 80px;
+        height: 80px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="inputNome" placeholder="Digite seu nome " />
+
+    <button id="botao">Clique aqui</button>
+    <p>--------------------------------------------------------------</p>
+    <p id="resultado"></p>
+
+    <div id="card">Card</div>
+    <p>-------------------------------------------------------------</p>
+
+    <button id="but">Clique aqui</button>
+
+    <!--Início da construção de formulário-->
+    <p>-------------------------------------------------------------</p>
+
+    <form id="formulario">
+      <p id="resultado"></p>
+
+      <label for="idade"> Idade:</label>
+      <input id="idade" type="number" placeholder="Digite sua idade" required />
+      <br />
+      <label for="nome"> Nome: </label>
+      <!--tag auxiliar, vai ficar do lado do input, auxiliando o 
+      usuário a identificar oq deve ser escrito--->
+      <input id="nome" type="text" placeholder="Digite seu nome" required />
+      <!--'id' utilizado para usabilidade do usuário, é identificador-->
+      <br />
+      <button type="submit">Cadastrar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </body>
+
+  <script src="./cadastro.js"></script>
+  <!--Caminho do JavaSscript-->
+</html>
