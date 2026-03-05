@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Final -ScTec</title>
+    <link rel="stylesheet" href="./estilos.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <h3 class="logo">DevPortfólio</h3>
+        <button id="hamburguer">=</button>
+        <ul class="menu" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hero-container">
+        <p class="intro">Olá eu sou</p>
+        <h2>Desenvolvedor FrontEnd</h2>
+        <p class="descricao">Criando experiências digitais com código</p>
+      </div>
+    </header>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <p>dffjfsddscksdnvsdnvsdvbskjncjbv</p>
+          <p>ddscndsvdnsv.kdsvlhewihfjbncjbvfheç lcnsdjlcvbdhsv</p>
+        </div>
+        <div class="sobre-dados">
+          <div>
+            <strong>5+</strong>
+            <span>Projetos concluídos</span>
+          </div>
+          <div>
+            <strong>1+</strong>
+            <span>Ano(s) de experiência</span>
+          </div>
+          <div>
+            <strong>4+</strong>
+            <span>Tecnologias</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="projetos-container">
+        <div class="projeto-card">
+          <img src="./imagem.jpg" alt="Imagem do projeto" />
+          <h2>X</h2>
+          <p>Plataforma ...</p>
+          <a href="#" target="_blank"> Ver Projeto</a
+          ><!---Depois colocar link de outro projetos que desenvolvi !!-->
+        </div>
+        <div class="projeto-card">
+          <img src="./imagem.jpg" alt="Imagem do projeto" />
+          <h2>Gerenciador X</h2>
+          <p>Aplicação ....</p>
+          <a href="#" target="_blank"> Ver Projeto</a
+          ><!---Depois colocar link de outros projetos que desenvolvi !!-->
+        </div>
+        <div class="projeto-card">
+          <img src="./imagem.jpg" alt="Imagem do projeto" />
+          <h2>App X</h2>
+          <p>Aplicação para gerenciador ...</p>
+          <a href="#" target="_blank"> Ver Projeto</a
+          ><!---Depois colocar link de outro projetos que desenvolvi !!-->
+        </div>
+      </div>
+    </section>
+    <section id="habilidades">
+      <h2>Habilidades Técnicas</h2>
+      <p>
+        Tecnologias e ferramentas que utilizo para desenvolver soluções
+        completas
+      </p>
+      <div class="habilidades-lista">
+        <div class="habilidades-card">
+          <h3>HTML</h3>
+          <span>Básico</span>
+        </div>
+        <div class="habilidades-card">
+          <h3>CSS</h3>
+          <span>Básico</span>
+        </div>
+        <div class="habilidades-card">
+          <h3>JavaScript</h3>
+          <span>Básico</span>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <h2>Entre em contato</h2>
+      <p>
+        Tem algum projeto em mente ou quer trocar uma ideia? Fique por dentro.
+      </p>
+      <div class="contato-lista">
+        <div class="contato-item">
+          <strong>Email</strong>
+          <span>lais.oc2007@aluno.ifsc.edu.br</span>
+        </div>
+        <div class="contato-item">
+          <strong>Telefone</strong>
+          <span>+55 (49) 9902-5942</span>
+        </div>
+        <div class="contato-item">
+          <strong>Localização</strong>
+          <span>Chapecó - SC</span>
+        </div>
+      </div>
+
+      <div class="redes-sociais">
+        <a href="https://github.com/laiscorrea-dev" target="_blank"> Github </a>
+        <a href="https://www.instagram.com/lai.correa15?igsh=MXFwZXI5OHlhanJrdw%3D%3D&utm_source=qr" target="_blank">Intagram</a>
+        <a href="https://www.linkedin.com/in/lais-de-oliveira-corrêa-ab0bb3395" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 DevPortfólio</p>
+    </footer>
+    <script>
+      let button = document.getElementById("hamburguer");
+      let menu = document.getElementById("menu");
+
+      button.addEventListener("click", function () {
+        menu.classList.toggle("ativa");
+      });
+    </script>
+  </body>
+</html>
