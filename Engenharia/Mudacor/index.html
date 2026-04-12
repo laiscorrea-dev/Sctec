@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    
+    <h1> Trocando as Cores das divs </h1>
+     <!--botões que ativam as cores das divs-->
+    <button id="trocaCor" onclick="trocaCor()"> Trocar cor </button>
+    <button id="retorCor" onclick="retorCor()"> Retornar </button>
+    <!--caixa de divs-->
+    <div id="div-1" class="divTrocaCor"> Div 1</div>
+    <div id="div-2" class="divTrocaCor"> Div 2</div>
+    <div id="div-3" class="divTrocaCor"> Div 3</div>
+
+    <p>---------------------------------------------------------------------------------------------</p>
+
+    <h2> Calculadora Simples </h2>
+    <p>  Operadores válidos: - , + , / , * </p>
+    <input type="text" id="num-1" placeholder="Primeiro número"/>
+    <input type="text" id="num-2" placeholder="Segundo número"/>
+    <input type="text" id="operador" placeholder="Operador"/>
+    <button onclick="efetuaOperacao()" > Calcular </button>
+    <p id="resultado">Resultado: </p>
+
+</body>
+</html>
