@@ -1,3 +1,5 @@
+// Aula 19 - Introdução a Manipulaçao de elementos de páginas web e Switch-Case 
+
 function trocaCor(){
     const div1 = document.getElementById("div-1");
     const div2 = document.getElementById("div-2");
@@ -45,13 +47,27 @@ function  efetuaOperacao() { //funçao chamada pelo botão efetuaOperacao
             break;
         default:
             resultado = alert("Operador inválido!")
-            
-    }
-
+            }
 document.getElementById("resultado").innerHTML = "Resultado : " + resultado;
-    
 }
+// Aula 20 - Arrays na prática: Manipule listas em JavaScript 
 
+const turma1 = ["Lais", "Yanni", "Isabela" ];
+const turma2 = ["Fábio", "João"]; // economiza mais linhas de códigos 
 
+const aluno1turma1 = "Lais";
+const aluno2turma1 = "Yanni";
+const aluno3turma1 = "Isabela";
+const aluno1turma2 = "Fábio";
+const aluno2turma2 = "João";
 
+console.log("Alunos na Turma 1: " + turma1)
+console.log("Alunos na Turma 2: " + turma2)
 
+/*-------------------------------------------------------------------------------------------------*/
+
+const listaCompras = ["Arroz", "Feijão", "Macarrão" ]
+console.log("Lista de Compras - "+listaCompras)
+listaCompras.push("Ovos");
+console.log("Item adcionado - "+ listaCompras[3])
+console.log("Lista Alterada - "+listaCompras)
