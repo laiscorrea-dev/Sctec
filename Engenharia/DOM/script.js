@@ -48,7 +48,7 @@ function  efetuaOperacao() { //funçao chamada pelo botão efetuaOperacao
         default:
             resultado = alert("Operador inválido!")
             }
-document.getElementById("resultado").innerHTML = "Resultado : " + resultado;
+document.getElementById("resultado").innerHTML = "Resultado : " + resultado.toFixed(2);
 }
 // Aula 20 - Arrays na prática: Manipule listas em JavaScript 
 
@@ -66,8 +66,31 @@ console.log("Alunos na Turma 2: " + turma2)
 
 /*-------------------------------------------------------------------------------------------------*/
 
+
 const listaCompras = ["Arroz", "Feijão", "Macarrão" ]
 console.log("Lista de Compras - "+listaCompras)
-listaCompras.push("Ovos");
-console.log("Item adcionado - "+ listaCompras[3])
+listaCompras.push("Ovos"); // adcionar um novo valor ao array - "push"
+listaCompras.push("Farrofa")
 console.log("Lista Alterada - "+listaCompras)
+console.log("Último item da lista: " + listaCompras[listaCompras.length - 1]) // acessar o ultimo elemento do array - "length"
+
+
+/*------------------------------------------------------------------------------------------------------------  */
+
+/*Aula 21 - Controle de fluxo: Laços de Repetição( Parte 1 ) */
+
+const carros = ["Gol", "Palio", "Uno", "Celta", "Fiesta", "Civic", "Corolla", "HB20", "Onix", "Sandero"];
+
+const conteudo= document.getElementById("conteudo");
+let dados = "";
+let i = 0; // variavel de controle 
+
+while (i<carros.length){
+    dados+= "<p>" + carros[i] + "</p>"; // concatenar os dados do array "carros" com a tag <p> para exibir cada elemento em uma nova linha
+    i++; // incrementa a variavel de controle para evitar um loop infinito
+}
+
+const secao = document.createElemeent("div");
+secao.innerHTML = "<h2>Loop While</h2>" + dados; // concatenar o título da seção com os dados dos carros
+
+
