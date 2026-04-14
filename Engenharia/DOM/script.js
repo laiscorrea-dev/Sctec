@@ -71,3 +71,41 @@ console.log("Lista de Compras - "+listaCompras)
 listaCompras.push("Ovos");
 console.log("Item adcionado - "+ listaCompras[3])
 console.log("Lista Alterada - "+listaCompras)
+
+
+/*----------------------------------------------------------------------------------- */
+/*Aula 20 - Controle de fluxos: laços de repetição( Parte 1 ) */
+
+const carros = ["Fusca", "Civic", "Corolla", "Gol", "Uno"];
+
+var dados ;
+var i;
+
+dados ="";
+i = 0;
+while (i < 4) {
+    dados += "<p>" + carros[i] + "</p>"; /* cada carro da lista é adcionado a variavel dados,
+  e cada um é colocado em uma linha diferente*/
+    i++;
+
+}
+const secao =document.createElement("div");
+conteudo.appendChild(secao); /* adciona a secao ao elemento 'conteudo' para exibir os resultados
+na página*/
+
+/*----------------------------------------------------------------------------------- */
+/* Aula 22 - Controle de fluxos: laços de repetição( Parte 2 ) */
+
+function criarSeção(titulo, dadosF) {
+    const secao = document.createElement("div");
+    secao.innerHTML = "<h2>" + titulo + "</h2>" + dadosF;
+    conteudo.appendChild(secao);
+
+}
+
+criarSeção("Loop While", dados); /* chama a função criarSeção para exibir os resultados do loop 
+while*/
+
+let dados = "";
+let i=0;
+
