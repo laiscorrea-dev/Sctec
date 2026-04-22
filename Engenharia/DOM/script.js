@@ -97,7 +97,7 @@ na página*/
 /* Aula 22 - Controle de fluxos: laços de repetição( Parte 2 ) */
 
 function criarSeção(titulo, dadosF) {
-    let secao = document.createElement("div");
+    const secao = document.createElement("div");
     secao.innerHTML = "<h2>" + titulo + "</h2>" + dadosF;
     conteudo.appendChild(secao);
 
@@ -118,20 +118,29 @@ while(i< carros.length){
     dados += "<p>" +carros[i]+"</p>";
     i++;
 }
-criarSeção("Loop While invertido", dados); /* chama a função criarSeção para exibir os resultados do loop 
+criarSeção("Loop While melhorado", dados); /* chama a função criarSeção para exibir os resultados do loop 
 while invertido*/
 
-dados= ""
-for(i=0 ; i<carros.length){
+dados = "";
+i=0;do{
+    dados += "<p>" +carros[i]+"</p>";
+    i++;
+} while(i<carros.length)
+    criarSeção("Loop While invertido", dados); /* chama a função criarSeção para exibir os resultados do loop Do-While*/
+
+
+dados= "";
+for(i=0;i<carros.length;i++){
     dados += "<p>" +carros[i]+"</p>";
 }
 criarSeção("Loop For", dados); /* chama a função criarSeção para exibir os resultados do loop 
 For*/
 
-daods= ""
+dados= "";
 for(let carro of carros){
     dados += "<p>"+ carro+"</p>";
 }
+criarSeção("Loop For-Of", dados); /* chama a função criarSeção para exibir os resultados do loop For-Of*/
 
 //organizar o index.html!!
 
