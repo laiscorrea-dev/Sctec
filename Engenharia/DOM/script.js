@@ -79,18 +79,56 @@ console.log("Último item da lista: " + listaCompras[listaCompras.length - 1]) /
 
 /*Aula 21 - Controle de fluxo: Laços de Repetição( Parte 1 ) */
 
-const carros = ["Gol", "Palio", "Uno", "Celta", "Fiesta", "Civic", "Corolla", "HB20", "Onix", "Sandero"];
+const carros = ["Gol", "Palio", "Uno","Civic"];
+
+var dados;
+var i; 
 
 const conteudo= document.getElementById("conteudo");
-let dados = "";
-let i = 0; // variavel de controle 
+dados = "";
+i = 0; // variavel de controle 
 
-while (i<carros.length){
+while (i<4){
     dados+= "<p>" + carros[i] + "</p>"; // concatenar os dados do array "carros" com a tag <p> para exibir cada elemento em uma nova linha
     i++; // incrementa a variavel de controle para evitar um loop infinito
 }
 
-const secao = document.createElemeent("div");
-secao.innerHTML = "<h2>Loop While</h2>" + dados; // concatenar o título da seção com os dados dos carros
+function criarSecao(titulo, dadosF) {
+    const secao = document.createElemeent("div");
+    secao.innerHTML = "<h2>Loop While</h2>" + dados; // concatenar o título da seção com os dados dos carros
+    conteudo.appendChild(secao);
 
+}
+criaSecao("Loop While", dados);
 
+let dados = "";
+let i = 0;
+
+while(i<carros.length){
+    dados+= "<p>" + carros[i] + "</p>"; 
+    i++;
+}
+criaSecao("Loop While melhorado", dados);
+
+let dados = "";
+let i=0;
+
+do{
+    dados+= "<p>" + carros[i] + "</p>"; 
+    i++;
+}while(i<carros.length)
+    criarSecao("Loop while invertido", dados);
+
+dados = "";
+i = 0;
+for(i=0; i<carros.length; i++){
+    dados+= "<p>" + carros[i]+"</p>";
+}
+criarSecao("Loop For", dados)
+
+dados="";
+i=0;
+for(let carro of carros){
+    dados+= "<p>"+ carro+"</p>"
+}
+criarSecao("Loop for of", dados);
