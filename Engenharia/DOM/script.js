@@ -135,6 +135,15 @@ for(let carro of carros){
 }
 criarSeção("Loop For-Of", dados); /* chama a função criarSeção para exibir os resultados do loop For-Of*/
 
+let carro1 = {marca:"Ford", modelo:"Ka", ano: "2015"}
+let carros2 = {marca:"Fiat", modelo:"Uno", ano: "2000"}
+
+let carro2 =[];
+carros2.push(carro1);
+carros2.push(carro2);
+console.log(carro2);
+
+
 //organizar o index.html!!
 
 
