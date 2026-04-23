@@ -69,6 +69,7 @@ console.log("Alunos na Turma 2: " + turma2)
 
 const listaCompras = ["Arroz", "Feijão", "Macarrão" ]
 console.log("Lista de Compras - "+listaCompras)
+
 listaCompras.push("Ovos"); // adcionar um novo valor ao array - "push"
 listaCompras.push("Farrofa")
 console.log("Lista Alterada - "+listaCompras)
@@ -93,42 +94,48 @@ while (i<4){
     i++; // incrementa a variavel de controle para evitar um loop infinito
 }
 
-function criarSecao(titulo, dadosF) {
-    const secao = document.createElemeent("div");
-    secao.innerHTML = "<h2>Loop While</h2>" + dados; // concatenar o título da seção com os dados dos carros
+
+/*----------------------------------------------------------------------------------- */
+/* Aula 22 - Controle de fluxos: laços de repetição( Parte 2 ) */
+
+function criarSeção(titulo, dadosF) {
+    const secao = document.createElement("div");
+    secao.innerHTML = "<h2>" + titulo + "</h2>" + dadosF;
     conteudo.appendChild(secao);
 
 }
-criaSecao("Loop While", dados);
-
-let dados = "";
-let i = 0;
-
-while(i<carros.length){
-    dados+= "<p>" + carros[i] + "</p>"; 
-    i++;
-}
-criaSecao("Loop While melhorado", dados);
-
-let dados = "";
-let i=0;
-
-do{
-    dados+= "<p>" + carros[i] + "</p>"; 
-    i++;
-}while(i<carros.length)
-    criarSecao("Loop while invertido", dados);
 
 dados = "";
-i = 0;
-for(i=0; i<carros.length; i++){
-    dados+= "<p>" + carros[i]+"</p>";
-}
-criarSecao("Loop For", dados)
-
-dados="";
 i=0;
-for(let carro of carros){
-    dados+= "<p>"+ carro+"</p>"
+while(i< carros.length){
+    dados += "<p>" +carros[i]+"</p>";
+    i++;
 }
-criarSecao("Loop for of", dados);
+criarSeção("Loop While melhorado", dados); /* chama a função criarSeção para exibir os resultados do loop 
+while invertido*/
+
+dados = "";
+i=0;do{
+    dados += "<p>" +carros[i]+"</p>";
+    i++;
+} while(i<carros.length)
+    criarSeção("Loop While invertido", dados); /* chama a função criarSeção para exibir os resultados do loop Do-While*/
+
+
+dados= "";
+for(i=0;i<carros.length;i++){
+    dados += "<p>" +carros[i]+"</p>";
+}
+criarSeção("Loop For", dados); /* chama a função criarSeção para exibir os resultados do loop 
+For*/
+
+dados= "";
+for(let carro of carros){
+    dados += "<p>"+ carro+"</p>";
+}
+criarSeção("Loop For-Of", dados); /* chama a função criarSeção para exibir os resultados do loop For-Of*/
+
+//organizar o index.html!!
+
+
+
