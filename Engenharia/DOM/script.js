@@ -131,20 +131,96 @@ For*/
 
 dados= "";
 for(let carro of carros){
+    if(carro === "Uno"){
+        //break; // interrompe o loop quando encontra o carro "Uno"   
+        continue; // pula a iteração atual e continua com a próxima, ou seja, não exibe o carro "Uno" mas continua exibindo os outros carros
+    }
     dados += "<p>"+ carro+"</p>";
 }
 criarSeção("Loop For-Of", dados); /* chama a função criarSeção para exibir os resultados do loop For-Of*/
 
 let carro1 = {marca:"Ford", modelo:"Ka", ano: "2015"}
-let carros2 = {marca:"Fiat", modelo:"Uno", ano: "2000"}
+let carro2 = {marca:"Fiat", modelo:"Uno", ano: "2000"}
 
-let carro2 =[];
+let carros2 =[];
 carros2.push(carro1);
 carros2.push(carro2);
 console.log(carro2);
 
 
-//organizar o index.html!!
+dados = "";
+for(let carro of carros2){
+    let propriedades = "";
+
+    for(let prop in carro){
+        propriedades += carro[prop] + " | ";
+
+    }
+    dados += "<p>" + propriedades +"</p>";
+
+}
+criarSeção("Loop For in ", dados) //* chama a função criarSeção para exibir os resultados do loop For-In,
+//  que percorre as propriedades dos objetos "carro1" e "carro2" e exibe seus valores concatenados em uma string separada por " | "*/
+
+
+dados= "";
+carros.forEach(carro => {
+    dados += "<p>" + carro + "</p>";
+});
+criarSeção("Loop ForEach", dados) /* chama a função criarSeção para exibir os resultados do loop ForEach*/
+
+/* --------------------------------- atividade prática ----------------------------------------------- */
+
+/*Aula 24 - Funções e Eventos (Parte 1)*/
+
+function mostrarSaudacao(){
+
+    const nome = document.getElementById("nome").value;
+    const hora = parseInt(document.getElementById("hora").value,10);
+    const mensagem = document.getElementById("mensagem");
+    mensagem.innerHTML = saudacaoPersonalizada(nome, hora);
+    
+}
+
+function saudacaoPersonalizada(nome, hora){
+    if(hora<12){
+        return "Bom dia, " + nome + "!";
+    }
+    else if(hora> 12 && hora <18){
+        return "Boa tarde, " + nome + "!";
+    }
+    else if(hora>18){
+        return "Boa noite, " + nome + "!";
+    }
+    else{
+        return "";
+    }
+    
+}
+
+/*  ---------- Aula 25 - Funções e Eventos (Parte 2) ---------- */
+
+function stBackgroundColor(color){
+    document.body.style.backgroundColor = color;
+}
+    document.getElementById("redButton").addEventListener("click", function(){stBackgroundColor("red")});
+    document.getElementById("greenButton").addEventListener("click", function(){stBackgroundColor("green")});
+    document.getElementById("blueButton").addEventListener("click", function(){stBackgroundColor("blue")});
+
+    document.getElementById("inputBox").addEventListener("keypress", function(event){ /* "event" é um objeto que contém 
+        informações sobre o evento de pressionar uma tecla keyprees - indica a tecla precionada*/
+        alert("Tecla pressionada: " + event.key);
+    });
+
+
+
+
+
+
+
+
+
+
 
 
 
